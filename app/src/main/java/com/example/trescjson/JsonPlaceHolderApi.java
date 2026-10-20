@@ -1,4 +1,11 @@
 package com.example.trescjson;
 
-public class JsonPlaceHolderApi {
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface JsonPlaceHolderApi {
+
+    @GET("db.json")
+    Call<BazaDanychJSON> getAktywnosci();
+
 }
